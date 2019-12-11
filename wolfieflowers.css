@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+    display: block;
+}
+
+/*my css format follows: imports(images),HTML outside-inside (Body element to tables),
+smaller HTML (h2, p, etc), media queries)
+
+/*set images*/
+#herobasket {
+    background-image: url("images/herobasket.jpg");
+}
+
+#herobouquet {
+    background-image: url("images/herobouquet.jpg");
+}
+
+#herodecor {
+    background-image: url("images/herodecor.jpg");
+}
+
+#herodelivery {
+    background-image: url("images/herodelivery.jpeg");
+}
+
+/*show images*/
+#herobasket,
+#herobouquet,
+#herodecor,
+#herodelivery {
+    background-size: 100% 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-left: 170px;
+}
+
+/*edit images and float them*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*body*/
+body {
+    background-image: url("images/background.jpg");
+    font-family: sans-serif;
+    background-color: #160C0A;
+}
+
+/*wrapper*/
+#wrapper {
+    box-shadow: 3px 3px 3px #160C0A;
+    width: 95%;
+    height: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E0CCC3;
+}
+
+/*header*/
+header {
+    background-color: #C29283;
+    color: #160C0A;
+    font-family: serif;
+    height: 100px;
+}
+
+/*nav*/
+nav {
+    background-size: 100% 100%;
+    font-family: serif;
+    float: left;
+    width: 170px;
+    height: 743px;
+    background-color: #160C0A;
+    border-style: solid;
+    border-color: #160C0A;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 1em;
+    padding-top: 10px;
+    /* padding-bottom: 267px; */
+}
+
+nav li {
+    border-color: #C29283;
+    border-top-color: #E0CCC3;
+    border-top-left-radius: #E0CCC3;
+    border-left-color: #E0CCC3;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    width: 140px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E0CCC3;
+}
+
+/*PseudoClass*/
+nav li:link {
+    border-color: #C29283;
+    border-top-color: #E0CCC3;
+    border-top-left-radius: #E0CCC3;
+    border-left-color: #E0CCC3;
+}
+
+nav li:visited {
+    border-color: #C29283;
+    border-top-color: #E0CCC3;
+    border-top-left-radius: #E0CCC3;
+    border-left-color: #E0CCC3;
+}
+
+nav li:hover {
+    text-decoration-color: #C29283;
+    border-color: #ED9D7A;
+    border-top-color: #C29283;
+    border-top-left-radius: #C29283;
+    border-left-color: #C29283;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #ED9D7A;
+}
+
+/*main*/
+main {
+    background-color: #E0CCC3;
+    color: #160C0A;
+    height: 483px;
+    padding: 0;
+    display: block;
+    /*moves main element over to make room for nav sidebar*/
+    margin-left: 170px;
+}
+
+/*table*/
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: 140px;
+    font-size: 0.9em;
+    min-width: 500px;
+}
+
+/*table background colors*/
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: #C29283;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #E0CCC3;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.content-table th {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*footer*/
+footer {
+    background-color: #C29283;
+    color: #160C0A;
+    font-style: italic;
+    text-align: center;
+    font-size: .70em;
+    padding-bottom: 1px;
+    /*moves footer element over to make room for nav sidebar
+    text-align already does this, but it serves as extra precaution*/
+    margin-left: 170px;
+}
+
+/*h1*/
+h1 {
+    background-image: url("images/storelogo.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 170px 99px;
+    height: 100px;
+    line-height: 70px;
+    margin: 0;
+    padding-bottom: 1px;
+    text-indent: 25%;
+    font-size: 40px;
+}
+
+/*h2*/
+h2 {
+    text-indent: 5%;
+}
+
+/*h3*/
+h3 {
+    text-indent: 5%;
+}
+
+/*main UL (remove indentation)*/
+main ul {
+    text-align: left;
+    padding: 0;
+}
+
+/*classes*/
+/*wed bar, img, and container */
+.wedbar {
+    text-transform: uppercase;
+    background-color: #C29283;
+    height: 40px;
+    line-height: 5px;
+    border: 2px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-top-color: #160C0A;
+    border-bottom-color: #160C0A;
+}
+
+/*this id container will allow me to condense the height of the image and clearleft*/
+#wedimgsection {
+    height: 150px;
+}
+
+.wedpageimg {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left: 40px;
+    margin-right: 10px;
+    border: 1px;
+    /*positioning of image*/
+    position: relative;
+    top: 4px;
+}
+
+.wedtext {
+    position: relative;
+    top: 9px;
+}
+
+.clearleft {
+    clear: left;
+}
+
+/*birthday bar,img, and container*/
+.cakebar {
+    text-transform: uppercase;
+    background-color: #C29283;
+    height: 40px;
+    line-height: 5px;
+    border: 2px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-top-color: #160C0A;
+    border-bottom-color: #160C0A;
+    position: relative;
+    top: 1px;
+}
+
+/*this id container will allow me to condense the height of the image and clearleft*/
+#cakeimgsection {
+    height: 150px;
+}
+
+.cakepageimg {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left: 40px;
+    margin-right: 10px;
+    border: 1px;
+    /*positioning of image*/
+    position: relative;
+    top: 4px;
+}
+
+.caketext {
+    position: relative;
+    top: 9px;
+}
+
+/*delivery page img*/
+.bikepageimg {
+    float: right;
+    margin-left: 10px;
+    height: 300px;
+    width: 200px;
+    position: relative;
+    top: 1px;
+}
+
+/* media query for tablet*/
+@media only screen and (max-width: 1024px){
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: none;
+        background-color: #E0CCC3;
+    }
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    header h1 {
+        line-height: 70px;
+        margin: 0;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        height: 80px;
+        padding-top: 0.01em;
+        padding-bottom: 0.01em;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-style: solid;
+        border-color: #E0CCC3;
+        border-right: 0;
+        border-left: 0;
+    }
+    nav ul{
+        position: absolute; top: 81px;
+    }
+    nav li {
+        display: inline-block;
+        width: 170px;
+        align-content: center;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    main {
+        padding: 0;
+        margin-left: 0;
+        font-size: 90%;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    #herobasket,
+    #herobouquet,
+    #herodecor,
+    #herodelivery {
+        display: none;
+    }
+}
+
+/*media query for smartphone*/
+@media only all and (max-width: 768px) {
+   header h1 {
+        line-height: 70px;
+        height: 100%;
+        font-size: 2em;
+        padding-left: .3em;
+        background-image: url("images/storelogomini.jpg")
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        height: 180px;
+        padding-top: 0.01em;
+        padding-bottom: 0.01em;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-style: solid;
+        border-color: #E0CCC3;
+        border-right: 0;
+        border-left: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 190px;
+        align-content: center;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        position: absolute; top: 110px;
+    }
+
+    nav a {
+        display: block;
+        padding: .2em;
+        font-size: 1.1em;
+        border-bottom: 1px;
+    }
+
+    main {
+        padding: 0;
+        margin-left: 0;
+        font-size: 90%;
+    }
+
+    .caketext {
+        position: relative;
+        top: 130px;
+        right: 140px;
+    }
+
+    .wedtext {
+        position: relative;
+        top: 130px;
+        right: 140px;
+    }
+
+    table{
+        position: relative;
+        right: 140px;
+    }
+
+    footer {
+        padding: 0;
+        position: relative;
+        top: 30px;
+    }
+
+    #herobasket,
+    #herobouquet,
+    #herodecor,
+    #herodelivery {
+        display: none;
+    }
+}
